@@ -46,6 +46,8 @@
 			<div class="container">
 				<div class="row">
 					<nav id="menu" class="pull-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="videos.html">Videos</a></li>
 						<li><a href="#">Tickets</a></li>
 						<li><a href="#">News</a></li>
 						<li><a href="#">Schedule</a></li>
@@ -130,7 +132,7 @@
 							<time>December 21,2015</time>
 						</div>
 					</div>	
-														
+
 				</div>
 			</div>
 
@@ -252,27 +254,6 @@
 		<script scr="lib/bootstrap/js/bootstrap.min.js"></script>
 		<script src="lib/owl-carousel/owl.carousel.min.js"></script>
 		<script src="https://use.fontawesome.com/4394000472.js"></script>
-		<script>
-			$(document).ready(function(){
-				$("#logotipo").on("mouseover", function(){
-					$("#banner h1").addClass("efeito");
-				}).on("mouseout", function(){
-					$("#banner h1").removeClass("efeito");
-				});
-
-				$("#input-search").on("focus", function(){
-
-					$("li.search").addClass("ativo");
-				}).on("blur", function(){
-					$("li.search").removeClass("ativo");
-				});
-
-				$(".thumbnails").owlCarousel({
-		      		autoPlay: 3000,
-		      		items : 4
-		  		});
-
-			});
-		</script>
+		<script src="js/efeitos.js"></script>
 	</body>
 </html>
