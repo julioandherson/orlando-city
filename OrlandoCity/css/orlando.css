@@ -103,7 +103,7 @@ header .header-black li a{
 header #logotipo {
 	position: absolute;
 	top: 20px;
-	z-index: 3;
+	z-index: 10;
 }
 #menu {
 	margin: 12px 0px;
