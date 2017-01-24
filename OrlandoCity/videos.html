@@ -2,10 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width:device-width, initial-scale=1"> <!-- Para ser responsivo -->
 		<title>Orlando City</title>
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/orlando.css">
+		<link rel="stylesheet" type="text/css" href="lib/plyr/dist/plyr.css">
+		<link rel="stylesheet" type="text/css" href="css/orlando-mobile.css">
+
 	</head>
 	<body>
 
@@ -73,7 +77,11 @@
 					</div>
 
 					<div class="row">
-						<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg"></video>
+						<div class="player">
+							<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg">
+								<track kind="captions" label="Português (Brasil)" src="vtt/legendas.vtt" srclang="pt-br" default>
+							</video>
+						</div>
 
 						<input type="range" id="volume" min="0" max="1" step="0.01" value="1">
 
@@ -217,10 +225,12 @@
 		</footer>
 
 		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/plyr/dist/plyr.js"></script>
 		<script scr="lib/bootstrap/js/bootstrap.min.js"></script>
 		<script src="lib/owl-carousel/owl.carousel.min.js"></script>
 		<script src="https://use.fontawesome.com/4394000472.js"></script>
 		<script src="js/efeitos.js"></script>
+
 
 		<script>
 			$(function(){
@@ -247,6 +257,8 @@
 					}
 					$(this).toggleClass("btn-success btn-danger");
 				});
+
+				plyr.setup(); //Ativando player PLYR
 			});
 		</script>
 	</body>

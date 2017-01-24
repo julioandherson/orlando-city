@@ -12,8 +12,27 @@ $(document).ready(function(){
 		$("li.search").removeClass("ativo");
 	});
 
+	$(".owl-carousel").owlCarousel();
+
 	$(".thumbnails").owlCarousel({
-			autoPlay: 3000,
-			items : 4
+		autoPlay: 3000,
+		items : 4
 	});
+
+	var owl = $(".thumbnails").data("owlCarousel");
+	$("#btn-news-prev").on("click", function(){
+		owl.prev();
+	});
+
+	$("#btn-news-next").on("click", function(){
+		owl.next();
+	});
+
+	$("#page-up").on("click", function(event) {
+		$("body").animate({
+			scrollTop:0
+		}, 1000);
+		event.preventDefault();
+	});
+	
 });

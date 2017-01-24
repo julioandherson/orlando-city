@@ -291,7 +291,7 @@ footer .row p {
 	margin-bottom: 0;
 }
 footer .row-cinza-claro {
-	height: 200px;
+	height: 240px;
 	background-color: #171F26;
 }
 footer .row-cinza-escuro {
@@ -363,6 +363,9 @@ footer .col-get-in-touch i {
 	font-size: 20px;
 	margin-top: 0 6px;
 }
+footer .col-get-in-touch a {
+	color: #666;
+}
 footer .col-get-in-touch p {
 	line-height: 20px;
 }
@@ -388,4 +391,11 @@ footer .list-socials i {
 }
 video {
 	width: 60%;
+}
+#btn-bars, #btn-search, 
+#btn-news-prev, #btn-news-next {
+	display: none;
+}
+footer .page-up {
+	display: none!important;	
 }
