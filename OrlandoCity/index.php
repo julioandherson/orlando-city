@@ -21,4 +21,12 @@ $app->get(
     }
 );
 
+$app->get(
+    '/shop',
+    function () {
+        include_once("view/shop.php");
+    }
+);
+
+
 $app->run();
