@@ -6,6 +6,7 @@
 		<title>Orlando City</title>
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="lib/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="lib/raty/lib/jquery.raty.css">
 		<link rel="stylesheet" type="text/css" href="css/orlando.css">
 		<link rel="stylesheet" type="text/css" href="css/orlando-mobile.css">
 	</head>
