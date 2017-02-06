@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="shop">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no"> <!-- Para ser responsivo -->
@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="lib/raty/lib/jquery.raty.css">
 		<link rel="stylesheet" type="text/css" href="css/orlando.css">
 		<link rel="stylesheet" type="text/css" href="css/orlando-mobile.css">
+
+		<script src="lib/angularjs/angular.min.js"></script>
 	</head>
 	<body>
 		<header>
